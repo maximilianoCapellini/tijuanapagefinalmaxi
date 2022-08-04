@@ -173,7 +173,8 @@ body div .headerProducto {
     border: 3px solid black; }
     body div .headerProducto .container-fluid .navproductos {
       text-align: center;
-      font-family: 'Times New Roman', Times, serif; }
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold; }
   body div .headerProducto .aperitivosProductos {
     text-align: center; }
   body div .headerProducto .imagenAperitivos {
@@ -282,6 +283,14 @@ body footer {
   background-color: grey;
   text-align: center; }
 
+@media screen and (max-width: 600px) {
+  body .bodyEventos {
+    background-color: grey; } }
+
+@media screen and (max-width: 399px) {
+  body .bodyEventos {
+    background-color: whitesmoke; } }
+
 /*estilos contacto*/
 .bodyContacto {
   display: grid;
@@ -350,3 +359,15 @@ body header {
     list-style: none;
     text-decoration: none;
     font-size: bold; }
+
+body main .card-body {
+  text-align: center;
+  background-color: grey; }
+
+@media screen and (max-width: 600px) {
+  body body {
+    background-color: grey; } }
+
+@media screen and (max-width: 399px) {
+  body body {
+    background-color: whitesmoke; } }

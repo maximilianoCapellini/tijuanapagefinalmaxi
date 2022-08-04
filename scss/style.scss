@@ -200,6 +200,7 @@ body{
                 border:3px solid black;
                 .navproductos{
                     @include leter-type;
+                    font-weight: bold;
                 }
 
             }
@@ -338,7 +339,22 @@ body{
         background-color: $colorTerciario;
         text-align: center;
     }
+    @media screen and (max-width:600px){  
+        .bodyEventos{
+            background-color: grey;
+        }
+       
+    
+    }
+    @media screen and (max-width:399px){  
+        .bodyEventos{
+            background-color: whitesmoke
+        }
+       
+    
+    }
 }       
+
 /*estilos contacto*/
 .bodyContacto{
     display:grid;
@@ -423,6 +439,24 @@ body{
             color: whitesmoke;
            @include decoration-text;
             font-size: bold;
+        }
+    }
+    main{
+        .card-body{
+            text-align: center;
+            background-color: grey;
+        }
+    }
+    @media screen and (max-width:600px){  
+        body{
+            background-color: grey;
+        }
+       
+    
+    }
+    @media screen and (max-width:399px){  
+        body{
+            background-color: whitesmoke
         }
     }
 }
