@@ -5,11 +5,6 @@
   box-sizing: border-box; }
 
 /*agregando variables */
-body .headerHome a {
-  border-radius: 10px;
-  color: black;
-  font-weight: bold; }
-
 body .headerHome {
   display: grid;
   grid-template-columns: 7fr;
@@ -30,30 +25,18 @@ body .headerHome {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 6vw;
     border: 10px solid #060505;
     justify-content: center; }
   body .headerHome p {
     text-align: center; }
-  body .headerHome .menu:hover {
-    transform: translate(30px, 30px);
-    background-color: whitesmoke;
-    transition: 3s; }
-  body .headerHome ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly; }
-  body .headerHome li {
-    list-style: none;
-    text-decoration: none; }
-  body .headerHome a {
-    list-style: none;
-    text-decoration: none;
-    background-color: orange;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 4vw;
-    overflow: hidden; }
+  body .headerHome .navHome {
+    background-color: orange; }
+    body .headerHome .navHome .homeTijuana {
+      font-weight: bold; }
+    body .headerHome .navHome .ulHome {
+      text-align: center;
+      font-weight: bold; }
 
 body .seccionCentral {
   display: grid;
@@ -131,21 +114,6 @@ body .footerHome {
     grid-template-columns: 7fr;
     grid-template-rows: 3.5fr;
     grid-template-areas: " divSeccion"; } }
-
-/*estilos ubicacion*/
-body header {
-  background-color: orange; }
-  body header .ubicacionPiePagina {
-    background-color: red;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif; }
-  body header .absolutImagen {
-    text-align: center; }
-  body header .ubicacionTitulo {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border: 10px solid black; }
 
 /*estilos productos*/
 body div .headerProducto {
@@ -298,6 +266,7 @@ body footer {
   grid-template-rows: 0.3fr 1.6fr 0.1fr;
   grid-template-areas: "headerContacto" "mainContacto" "footerContacto"; }
   .bodyContacto .headerContacto {
+    background-color: orange;
     grid-area: headerContacto;
     text-align: center;
     display: flex; }
@@ -342,6 +311,7 @@ body footer {
 
 /*estilos carrito compra*/
 body header {
+  background-color: orange;
   display: flex;
   flex-direction: column; }
   body header .carritoPiePagina {

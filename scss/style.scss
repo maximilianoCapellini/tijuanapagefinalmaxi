@@ -27,34 +27,25 @@ body{
         h1{
             @include  leter-type;
             font-weight: bold;
-            font-size: 8vw;
+            font-size: 6vw;
             border: 10px solid rgb(6, 5, 5);
             justify-content: center;
         }
         p{
             text-align: center;
         }
-        .menu:hover{
-            transform: translate(30px,30px);
-            background-color:whitesmoke;
-            transition: 3s;
+        .navHome{
+            background-color: orange;
+            .homeTijuana{
+                font-weight: bold;
+            }
+            .ulHome{
+                text-align: center;
+                font-weight: bold;
+            }
         }
-        ul{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-        }
-        li{
-            @include decoration-text;
-        }
-        a{
-            @include decoration-text;
-            background-color:$colorSecundario;
-            @include leter-type;
-            font-size: 4vw;
-            @extend %botones;
-            overflow: hidden;
-        }
+
+     
     }
     .seccionCentral{
         display: grid;
@@ -152,25 +143,6 @@ body{
     
     }
 
-}
-/*estilos ubicacion*/
-
-body{
-    header{
-        background-color: $colorSecundario;
-        .ubicacionPiePagina{
-            background-color: red;
-            @include leter-type;
-        }
-        .absolutImagen{
-            text-align: center;
-        }
-        .ubicacionTitulo{
-            @include leter-type;
-            font-size: 60px;
-            border: 10px solid black;
-        }
-    }
 }
 /*estilos productos*/
 body{
@@ -364,6 +336,7 @@ body{
     "mainContacto"
     "footerContacto";
         .headerContacto{
+            background-color: orange;
             grid-area: headerContacto;
             text-align: center;
             display: flex;
@@ -422,6 +395,7 @@ body{
 /*estilos carrito compra*/
 body{
     header{
+        background-color: orange;
         @include flex-colum;
         .carritoPiePagina{
             background-color: map-get($map: $colores, $key: h3);
